@@ -183,7 +183,7 @@ namespace CustomerOrdersApi
             };
         }
 
-        private float CalculateTotal(List<Item> items) {
+        public static float CalculateTotal(List<Item> items) {
             float amount = 0F;
             float shipping = 4.99F;
             items.ForEach(item => amount += item.Quantity * item.UnitPrice);
