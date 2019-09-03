@@ -11,6 +11,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="orders.NET.unittests\**" />
+    <Content Remove="orders.NET.unittests\**" />
+    <EmbeddedResource Remove="orders.NET.unittests\**" />
+    <None Remove="orders.NET.unittests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="HalKit" Version="0.8.0" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="1.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="1.0.2" />
