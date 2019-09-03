@@ -187,7 +187,8 @@ namespace CustomerOrdersApi
             float amount = 0F;
             float shipping = 4.99F;
             items.ForEach(item => amount += item.Quantity * item.UnitPrice);
-            amount += shipping;
+            if (amount < 100f)
+                amount += shipping;
             return amount;
         }
 
