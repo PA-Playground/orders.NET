@@ -2,6 +2,7 @@ Properties/launchSettings.json
 orders.NET.sln.DotSettings.user
 orders.NET.csproj.user
 /.vs
+/.vscode
 /obj
 /bin
 /orders.NET.unittests/obj
